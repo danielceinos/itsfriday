@@ -8,7 +8,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+  
       - uses: actions/checkout@v2
 
       - name: Execute python
+        env:
+          WEBHOOK: ${{ secrets.WEBHOOK }}
         run: python3 send-webhook.py
