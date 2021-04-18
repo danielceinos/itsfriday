@@ -14,4 +14,6 @@ jobs:
       - name: Execute python
         env:
           WEBHOOK: ${{ secrets.WEBHOOK }}
-        run: python3 send-webhook.py
+        run: |
+          echo "${WEBHOOK}"
+          python3 send-webhook.py
