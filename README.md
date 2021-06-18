@@ -1,1 +1,1 @@
-# itsfriday
+# itsfriday!
